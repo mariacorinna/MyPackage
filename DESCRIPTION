@@ -1,0 +1,19 @@
+Package: MyPackage
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Maria Corinna", "Diener",
+      email = "maria.diener@edu.unito.it",
+      role = c("aut", "cre")
+    )
+  )
+Description: Pacchetto contenente una funzione che legge una matrice sparsa, la trasforma in densa e restituisce le dimensioni della matrice.
+    Continuation lines should be indented.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    Matrix
+Config/roxygen2/version: 8.1.1
