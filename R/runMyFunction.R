@@ -11,10 +11,10 @@ runMyFunction <- function(directory, input_name, output_name = NULL) {
 
 
   if (is.null(output_name)) {
-    cmd <- sprintf("docker run --rm -v %s:/data -w /data image Rscript MyFunction.R %s",
+    cmd <- sprintf("docker run --rm -v %s:/data -w /data image %s",
                    dir_path, input_name)
   } else {
-    cmd <- sprintf("docker run --rm -v %s:/data -w /data image Rscript MyFunction.R %s %s",
+    cmd <- sprintf("docker run --rm -v %s:/data -w /data image %s %s",
                    dir_path, input_name, output_name)
   }
 
